@@ -9,10 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css"/>
+    
+    <script>
+        function mialerta() {
+            alert("¡BIENVENIDO A ADOPCIÓN GATUNA!"); 
+        }
+    </script>
+         
+
 </head>
   <body>
-    <header>
-        
+      <input type="button" onclick="mialerta();" value="Clic para ver el mensaje de alerta"/>
+    
+      <header>
         <h1 class="display-3">ADOPCIÓN GATUNA</h1>
         <p class="lead">¡Gat@s buscan human@s para adoptar!</p>
         <hr class="my-2">
@@ -22,7 +31,7 @@
         </p>
     </div>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.html.html">Adopción Gatuna </a>
+        <a class="navbar-brand" href="index.html">Adopción Gatuna </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
             data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -31,7 +40,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html.html">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Nosotros</a>
@@ -58,16 +67,20 @@
     
 </header>
     <main> 
+       
      <div class="container">
     <div class="row"> 
-    <div class="col-md-3"><img src="depositphotos_8642715-stock-photo-six-in-a-basket.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></div>
+    <div id="div1" class="col-md-3"><img src="depositphotos_8642715-stock-photo-six-in-a-basket.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></div>
     <div class="col-md-3"><img src="c1e03bad-0d3e-4324-b803-7b60fadbd83b_16-9-aspect-ratio_default_0.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></div>
     <div class="col-md-3"><img src="gatos-mascotas-educacion_372473213_113530343_1706x960.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></div>
     <div class="col-md-3"><img src="_109757296_gettyimages-1128004359.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></div>
     </div>
+    <button>Hide</button>
 
    <div class="container-fluid">
        <div class="row">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus, ullam eius eligendi laudantium, voluptatibus corrupti at odio aliquam aliquid accusantium maxime in expedita possimus blanditiis sequi unde. Nulla, libero.</div>
+       <br>
        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus, ullam eius eligendi laudantium, voluptatibus corrupti at odio aliquam aliquid accusantium maxime in expedita possimus blanditiis sequi unde. Nulla, libero.</div>
        <br>
        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus, ullam eius eligendi laudantium, voluptatibus corrupti at odio aliquam aliquid accusantium maxime in expedita possimus blanditiis sequi unde. Nulla, libero.</div>
@@ -85,5 +98,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  
+<script> 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+</script> 
+
+
+
+</body>
 </html>
